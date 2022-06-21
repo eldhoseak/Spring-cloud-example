@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Save Flight Details</title>
+</head>
+<body>
+
+
+
+	<form  method="post">
+	<div th:if="${isSaved == true}">
+	<h2>Details saved Successfully !!</h2>
+	</div>
+	
+		<table>
+			<tr>
+				<td><label for="user-name">Flight Name</label></td>
+				<td><input type="text" name="flightName"></input></td>
+			</tr>
+			<tr>
+				<td><label for="email">From</label></td>
+				<td><input type="text" name="from"></input></td>
+			</tr>
+			<tr>
+				<td><label for="email">To</label></td>
+				<td><input type="text" name="to"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit"></input></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Flight Details</title>
+</head>
+<body>
+	<table border="2" >
+		<tr>
+			<td>Flight Name</td>
+			<td>From</td>
+			<td>To</td>
+		</tr>
+
+		<tr>
+			<td th:text="${flightDto.flightName}"></td>
+			<td th:text="${flightDto.from}"></td>
+			<td th:text="${flightDto.to}"></td>
+		</tr>
+
+	</table>
+
+</body>
+</html>
